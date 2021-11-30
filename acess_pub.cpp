@@ -13,4 +13,21 @@ int main(){
 	publicly_Accessible obj1;
 	obj1.display();
 }
+/////privte this will give a errorr////////////////
+#include<iostream>
+using namespace std;
+class publicly_Accessible{
+	private:
+		int a=8;
+		int b=9;
+		int display(){
+			cout<<"value of a is "<<a;
+			cout<<"value of b is "<<b;
+		}
+};
+int main(){
+	publicly_Accessible obj1;
+	obj1.display();
+}
+
 
